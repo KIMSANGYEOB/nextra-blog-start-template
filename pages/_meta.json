@@ -1,0 +1,21 @@
+{
+    "index": {
+        "title": "Introduction",
+        "display": "hidden",
+        "theme": {
+            "breadcrumb": true,
+            "layout": "full",
+            "toc": true,
+            "pagination": false
+        }
+    },
+    "about": {
+        "title": "About",
+        "type": "page",
+        "theme": {
+            "breadcrumb": true,
+            "layout": "full",
+            "sidebar": false
+        }
+    }
+}
