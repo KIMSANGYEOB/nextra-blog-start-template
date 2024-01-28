@@ -6,7 +6,8 @@ keywords:
   - 블로그 시작
 ---
 
-import LatestPost from '../components/features/posts/LatestPost';
+import LatestPosts from "../public/data/latest-post.json"
+import Posts from '../components/features/posts/Posts';
 
 # Nextra Start Template 홈
 
@@ -14,6 +15,15 @@ Let's Start Main Page!
 
 ## 최신글
 
-<LatestPost />
+<Posts>
+  {
+    LatestPosts.map((post, index) => 
+      <Posts.Container key={index} post={post}>
+        <Posts.Image />
+        <Posts.Content />
+      </Posts.Container>
+    )
+  }
+</Posts>
 
 <br />
